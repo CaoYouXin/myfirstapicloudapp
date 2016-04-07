@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget id="A0000000000001" version="0.0.1">
-  	<name>首页导航</name>
-	<description>
-		Example For APICloud.
-	</description>
-	<author email="c_youxin@163.com" href="http://www.apicloud.com">
-		Developer
-	</author>
-	<content src="index.html"/>
+<widget id="A0000000000002" version="0.0.1">
+    <name>底部导航</name>
+    <description>
+        Example For APICloud.
+    </description>
+    <author email="c_youxin@163.com" href="http://www.apicloud.com">
+        Developer
+    </author>
+    <content src="index.html"/>
 	<preference name="appBackground" value="rgba(0,0,0,0)"/>
 	<preference name="windowBackground" value="rgba(0,0,0,0)"/>
 	<preference name="frameBackgroundColor" value="rgba(0,0,0,0)"/>
