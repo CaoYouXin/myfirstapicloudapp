@@ -7,7 +7,7 @@
     <author email="c_youxin@163.com" href="http://www.apicloud.com">
         Developer
     </author>
-    <content src="index.html"/>
+    <content src="http://192.168.4.244:8080/app/pageslider.html"/>
     <access origin="*"/>
     <preference name="pageBounce" value="false"/>
 	<preference name="appBackground" value="rgba(0,0,0,0.0)"/>

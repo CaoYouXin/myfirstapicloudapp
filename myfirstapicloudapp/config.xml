@@ -16,6 +16,8 @@
 	<preference name="smartUpdate" value="false"/>
 	<preference name="debug" value="false"/>
 	<preference name="statusBarAppearance" value="true"/>
+	<preference name="hScrollBarEnabled" value="true"/>
+	<preference name="vScrollBarEnabled" value="true"/>
 	<permission name="location"/>
 	<permission name="internet"/>
 	<access origin="*"/>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <style>
+        *, *:before, *:after {
+            margin: 0;
+            padding: 0;
+            border: 0 none;
+            font-weight: lighter;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            margin: 50px 20px;
+        }
+
+        input {
+            height: 50px;
+            border: solid 1px #000;
+            border-radius: 8px;
+            display: block;
+            float: left;
+            font-size: 26px;
+            line-height: 50px;
+            padding: 0;
+        }
+
+        button {
+            height: 50px;
+            border: solid 1px #000;
+            border-radius: 8px;
+            display: block;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <input style="width: 100%; margin-bottom: 20px;" placeholder="请输入手机号" type="tel">
+    <input style="width: 50%;" placeholder="请输入验证码" type="tel">
+    <button style="width: 40%; margin-left: 10%;">获取验证码</button>
+    <button style="width: 100%; margin-top: 20px;">登录</button>
+</div>
+
+<script type="text/javascript" src="./script/api.js"></script>
+<script type="text/javascript">
+    apiready = function () {
+
+//        var obj = api.require('inputField');
+//        obj.open({
+//            bgColor:'#708090',
+//            lineColor:'#C71585',
+//            fileBgColor:'#90EE90',
+//            borderColor:'#FFB6C1',
+//            sendImg:'widget://res/img/sendImg.png',
+//            fixedOn: api.frameName
+//        },function( ret ){
+//            if( ret.status ){
+//                alert( JSON.stringify( ret ) );
+//            }
+//        });
+    }
+</script>
+</body>
+</html>

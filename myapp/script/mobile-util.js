@@ -53,22 +53,28 @@ window.mobileUtil = (function (win, doc) {
             data.width = data.width || 640;
 
             if (isMobile) { // 定宽
-                if (isAndroid) {
-                    var medium_dpi = data.width / win.screen.availWidth * window.devicePixelRatio * 160;
-
-                    medium_dpi = medium_dpi.toFixed(2);
-
-                    data['target-densitydpi'] = medium_dpi;
-                } else {
-                    var scale = win.screen.availWidth / data.width;
-
-                    scale = scale.toFixed(2);
-
-                    data['initial-scale'] = data['maximum-scale'] = data['minimum-scale'] = scale;
-                }
-
-                metaEl.content = JSON.stringify(data).replace(/\s*/g, '').replace(/[{}"]/g, '').replace(/:/g, '=');
+                //if (isAndroid) {
+                //    var medium_dpi = data.width / win.screen.availWidth * window.devicePixelRatio * 160;
+                //
+                //    medium_dpi = medium_dpi.toFixed(2);
+                //
+                //    data['target-densitydpi'] = medium_dpi;
+                //} else {
+                //    var scale = api.winWidth / data.width;
+                //
+                //    scale = scale.toFixed(2);
+                //
+                //    data['initial-scale'] = data['maximum-scale'] = data['minimum-scale'] = scale;
+                //}
             }
+
+            var scale = api.winWidth / data.width;
+
+            scale = scale.toFixed(2);
+
+            data['initial-scale'] = data['maximum-scale'] = data['minimum-scale'] = scale;
+            metaEl.content = JSON.stringify(data).replace(/\s*/g, '').replace(/[{}"]/g, '').replace(/:/g, '=');
+
             console.log(data);
             alert(JSON.stringify(data));
         },
@@ -93,4 +99,6 @@ window.mobileUtil = (function (win, doc) {
 })(window, document);
 
 // 默认直接适配页面
-window.mobileUtil.fixScreen();
+apiready = function () {
+    window.mobileUtil.fixScreen();
+};
